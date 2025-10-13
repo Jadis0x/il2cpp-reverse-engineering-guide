@@ -12,6 +12,8 @@ This guide shares practical examples on how to work with the Il2CppInspector C++
 #### **Legal Notice**
 This project is provided for educational purposes only. Ensure you comply with the license agreements and terms of service of any software you analyze.
 
+
+
 #### Installation
 You can get the latest version of Il2CppInspectorPro 2025.6 [here](https://github.com/jadis0x/Il2CppInspectorPro/releases).
 
@@ -57,6 +59,7 @@ Steam: Jadis0x
     <li><a href="#modify_field">Changing the Value of a Class Field</a></li>
     <li><a href="#write_FindObjectOfType_function">Creating a Helper Function to Find Objects of a Specific Type ("FindObjectOfType")</a></li>
     <li><a href="#readingProperty">Reading and Managing Static and Instance Properties</a></li>
+    <li><a href="#modExample">Il2CppInspector C++ Scaffold Mod Example</a></li>
   </ul>
 </nav>
 
@@ -1201,4 +1204,7 @@ Output:
 
 <img src="img/11.png" width="650">
 
-I will continue to contribute as much as I can. For now, bye!
+<br>
+<h2 id="modExample">Il2CppInspector C++ Scaffold Mod Example</h2>
+
+As a reference, you can check out my open-source IL2CPP mod project built using Il2CppInspectorPro C++ scaffold: [DevourX](https://github.com/jadis0x/DevourX)
