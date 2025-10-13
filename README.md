@@ -5,59 +5,42 @@
 
 <h1 align="center">Il2CppInspector: C++ Scaffold Guide</h3>
 
-<p>
-This guide shares practical examples on how to work with the Il2CppInspector C++ scaffold, including how to interact with IL2CPP API functions effectively. to reverse engineer Unity IL2CPP games. It includes concrete examples and helper utilities to speed up your workflow
-</p>
+## Overview
+This guide gathers practical examples for working with the Il2CppInspector C++ scaffold and the IL2CPP API when reverse engineering Unity games. Each section focuses on a discrete workflow, combining explanations, code snippets, and screenshots that demonstrate the expected output.
 
-#### **Legal Notice**
-This project is provided for educational purposes only. Ensure you comply with the license agreements and terms of service of any software you analyze.
+> **Legal notice:** This repository is intended for educational purposes only. Always respect the license agreements and terms of service of any software you analyze.
 
 
 
-#### Installation
-You can get the latest version of Il2CppInspectorPro 2025.6 [here](https://github.com/jadis0x/Il2CppInspectorPro/releases).
-
-#### Requirements
-Having knowledge of C++ and C# is essential. You should also be familiar with the basics of the Unity game engine.
-
-> [!NOTE]  
-> I wrote my own helper class. You can access it under the lib folder. Throughout the guide, I will be using the helper functions I created.
-
-
-
-
-#### Getting Started
-This repository demonstrates how to work with IL2CPP-compiled Unity games. The guide assumes you have already generated a C++ scaffold using **Il2CppInspector**.
-
+## Quick Reference
+- **Installation:** Download the latest Il2CppInspectorPro release from the [official repository](https://github.com/jadis0x/Il2CppInspectorPro/releases).
+- **Requirements:** Familiarity with C++ and C#, plus a working understanding of the Unity engine.
+- **Getting started:** The examples assume you have already generated a C++ scaffold using **Il2CppInspectorPro 2025.6**.
+- **Prerequisites:**
+  - Windows with **Visual Studio 2019** (or newer).
+  - A local copy of the target Unity game.
+  - The helper utilities provided in the [`lib`](lib) directory of this repository.
+- **Video tutorial:** [Watch on YouTube](https://www.youtube.com/watch?v=L7s2ttcNEh0).
+- **Contact:** Discord & Steam — **Jadis0x**.
 #### Prerequisites
 - Windows with **Visual Studio 2019** or newer installed
 - **Il2CppInspectorPro** (see the Installation section above)
 - Basic knowledge of C++/C# and the Unity game engine
 - A local copy of the target Unity game
 
-
-#### Video
-[![Video](https://img.youtube.com/vi/L7s2ttcNEh0/0.jpg)](https://www.youtube.com/watch?v=L7s2ttcNEh0)
-
-#### Contact
-If you have any questions, feel free to reach out to me.</br>
-
-Discord: Jadis0x </br>
-Steam: Jadis0x
-
 #### Navigation
 
 <nav>
   <ul>
     <li><a href="#get_assemblies">Get the assemblies</a></li>
-    <li><a href="#type_usage">Converting an Il2CppObject* to Type* and Understanding Its Usage</a></li>
+    <li><a href="#type_usage">Convert an Il2CppObject* to Type*</a></li>
     <li><a href="#get_class_names_types">Getting class names and types from a specific assembly</a></li>
     <li><a href="#get_info_method">Getting information about any method</a></li>
     <li><a href="#call_function">Executing a Method Using "il2cpp_runtime_invoke"</a></li>
     <li><a href="#list_all_functions">Getting a List of All Functions in the Target Class</a></li>
     <li><a href="#get_field_info">Getting Information about Class Fields (FieldInfo)</a></li>
     <li><a href="#modify_field">Changing the Value of a Class Field</a></li>
-    <li><a href="#write_FindObjectOfType_function">Creating a Helper Function to Find Objects of a Specific Type ("FindObjectOfType")</a></li>
+    <li><a href="#write_FindObjectOfType_function">Create a FindObjectOfType helper</a></li>
     <li><a href="#readingProperty">Reading and Managing Static and Instance Properties</a></li>
     <li><a href="#modExample">Il2CppInspector C++ Scaffold Mod Example</a></li>
   </ul>
