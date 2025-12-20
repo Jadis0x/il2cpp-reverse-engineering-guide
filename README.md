@@ -1,6 +1,6 @@
 
-[![GitHub stars](https://img.shields.io/github/stars/rotlily/il2cpp-reverse-engineering-guide.svg?style=flat&label=Stars&color=ffcc66)](https://github.com/rotlily/il2cpp-reverse-engineering-guide/stargazers)
-[![GitHub contributors](https://img.shields.io/github/contributors/rotlily/il2cpp-reverse-engineering-guide.svg)](https://github.com/rotlily/il2cpp-reverse-engineering-guide/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/jadis0x/il2cpp-reverse-engineering-guide.svg?style=flat&label=Stars&color=ffcc66)](https://github.com/jadis0x/il2cpp-reverse-engineering-guide/stargazers)
+[![GitHub contributors](https://img.shields.io/github/contributors/jadis0x/il2cpp-reverse-engineering-guide.svg)](https://github.com/jadis0x/il2cpp-reverse-engineering-guide/graphs/contributors)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <h1 align="center">Il2CppInspector: C++ Scaffold Guide</h3>
@@ -13,7 +13,7 @@ This guide gathers practical examples for working with the Il2CppInspector C++ s
 
 
 ## Quick Reference
-- **Installation:** Download the latest Il2CppInspectorPro release from the [official repository](https://github.com/rotlily/Il2CppInspectorPro/releases).
+- **Installation:** Download the latest Il2CppInspectorPro release from the [official repository](https://github.com/jadis0x/Il2CppInspectorPro/releases).
 - **Requirements:** Familiarity with C++ and C#, plus a working understanding of the Unity engine.
 - **Getting started:** The examples assume you have already generated a C++ scaffold using **Il2CppInspectorPro 2025.6**.
 - **Prerequisites:**
@@ -21,7 +21,7 @@ This guide gathers practical examples for working with the Il2CppInspector C++ s
   - A local copy of the target Unity game.
   - The helper utilities provided in the [`lib`](lib) directory of this repository.
 - **Video tutorial:** [Watch on YouTube](https://www.youtube.com/watch?v=L7s2ttcNEh0).
-- **Contact:** Discord & Steam: **#Rotlily**.
+- **Contact:** Discord & Steam: **#Jadis0x**.
 #### Prerequisites
 - Windows with **Visual Studio 2019** or newer installed
 - **Il2CppInspectorPro** (see the Installation section above)
@@ -1190,4 +1190,4 @@ Output:
 <br>
 <h2 id="modExample">Il2CppInspector C++ Scaffold Mod Example</h2>
 
-As a reference, you can check out my open-source IL2CPP mod project built using Il2CppInspectorPro C++ scaffold: [DevourX](https://github.com/rotlily/DevourX)
+As a reference, you can check out my open-source IL2CPP mod project built using Il2CppInspectorPro C++ scaffold: [DevourX](https://github.com/jadis0x/DevourX)
