@@ -3,33 +3,17 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/jadis0x/il2cpp-reverse-engineering-guide.svg)](https://github.com/jadis0x/il2cpp-reverse-engineering-guide/graphs/contributors)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<h1 align="center">Il2CppInspector: C++ Scaffold Guide</h3>
+<h3 align="center">Il2CppInspector: C++ Scaffold Guide</h3>
 
-## Overview
-This guide gathers practical examples for working with the Il2CppInspector C++ scaffold and the IL2CPP API when reverse engineering Unity games. Each section focuses on a discrete workflow, combining explanations, code snippets, and screenshots that demonstrate the expected output.
-
-> **Legal notice:** This repository is intended for educational purposes only. Always respect the license agreements and terms of service of any software you analyze.
+### Introduction
+IL2CPP (Intermediate Language to C++) is a scripting backend developed by the Unity game engine that compiles managed .NET code (C#) into native C++ code Ahead of Time (AOT). While this process significantly improves game performance, it makes reverse engineering considerably more complex compared to traditional .NET workflows (e.g., using dnSpy).
 
 
+### Prerequisites
 
-## Quick Reference
-- **Installation:** Download the latest Il2CppInspectorPro release from the [official repository](https://github.com/jadis0x/Il2CppInspectorPro/releases).
-- **Requirements:** Familiarity with C++ and C#, plus a working understanding of the Unity engine.
-- **Getting started:** The examples assume you have already generated a C++ scaffold using **Il2CppInspectorPro 2025.6**.
-- **Prerequisites:**
-  - Windows with **Visual Studio 2019** (or newer).
-  - A local copy of the target Unity game.
-  - The helper utilities provided in the [`lib`](lib) directory of this repository.
-- **Video tutorial:** [Watch on YouTube](https://www.youtube.com/watch?v=L7s2ttcNEh0).
-- **Contact:** Discord & Steam: **#Jadis0x**.
-#### Prerequisites
-- Windows with **Visual Studio 2019** or newer installed
-- **Il2CppInspectorPro** (see the Installation section above)
-- Basic knowledge of C++/C# and the Unity game engine
-- A local copy of the target Unity game
+To get started, you'll need Windows with Visual Studio 2019 (or newer) and a local copy of your target Unity game. This guide assumes you have already generated a C++ scaffold using [Il2CppInspector](https://github.com/jadis0x/Il2CppInspectorPro/releases) and possess a solid understanding of C++, C#, and Unity's architecture.
 
-#### Navigation
-
+### Quick Navigation
 <nav>
   <ul>
     <li><a href="#get_assemblies">Get the assemblies</a></li>
