@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Il2CppRE-guide", "Il2CppRE-guide.vcxproj", "{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Debug|x64.ActiveCfg = Debug|x64
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Debug|x64.Build.0 = Debug|x64
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Debug|x86.Build.0 = Debug|Win32
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Release|x64.ActiveCfg = Release|x64
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Release|x64.Build.0 = Release|x64
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Release|x86.ActiveCfg = Release|Win32
+		{8A6F656C-B52D-48F4-80C4-AF511A7E90B5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		      SolutionGuid = {a0abe5ce-00d7-4b3b-9b3f-cf5837e263b6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <ItemGroup>
+      <None Include="definitions\version.def">
+      <Filter>definitions</Filter>
+      </None>
+      </ItemGroup>
+      <ItemGroup>
+      <ClCompile Include="user\main.cpp">
+      <Filter>user</Filter>
+      </ClCompile>
+      <ClCompile Include="framework\dllmain.cpp">
+      <Filter>framework</Filter>
+      </ClCompile>
+      <ClCompile Include="framework\helpers.cpp">
+      <Filter>framework</Filter>
+      </ClCompile>
+      <ClCompile Include="framework\il2cpp-init.cpp">
+      <Filter>framework</Filter>
+      </ClCompile>
+      <ClCompile Include="framework\pch-il2cpp.cpp">
+      <Filter>framework</Filter>
+      </ClCompile>
+      <ClCompile Include="framework\version.cpp">
+      <Filter>framework</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\detours\detours.cpp">
+      <Filter>libraries\detours</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\detours\disasm.cpp">
+      <Filter>libraries\detours</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\detours\modules.cpp">
+      <Filter>libraries\detours</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui_draw.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui_impl_dx11.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui_impl_win32.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui_tables.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="libraries\imgui\imgui_widgets.cpp">
+      <Filter>libraries\imgui</Filter>
+      </ClCompile>
+      <ClCompile Include="user\settings.cpp">
+      <Filter>user</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\gui\GUITheme.cpp">
+      <Filter>handlers\gui</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\gui\menu.cpp">
+      <Filter>handlers\gui</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\gui\tabs\SettingsTAB.cpp">
+      <Filter>handlers\gui\tabs</Filter>
+      </ClCompile>
+   <ClCompile Include="handlers\gui\tabs\UnityExplorerTAB.cpp">
+      <Filter>handlers\gui\tabs</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\Dx11.cpp">
+      <Filter>handlers</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\keybinds.cpp">
+      <Filter>handlers</Filter>
+      </ClCompile>
+   <ClCompile Include="handlers\Il2CppResolver.cpp">
+      <Filter>handlers</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\hooks\DirectX.cpp">
+      <Filter>handlers\hooks</Filter>
+      </ClCompile>
+      <ClCompile Include="handlers\hooks\InitHooks.cpp">
+      <Filter>handlers\hooks</Filter>
+      </ClCompile>
+      </ItemGroup>
+      <ItemGroup>
+      <ClInclude Include="user\main.h">
+      <Filter>user</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-api-functions.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-api-functions-ptr.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-functions.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-metadata-version.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-types.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="appdata\il2cpp-types-ptr.h">
+      <Filter>appdata</Filter>
+      </ClInclude>
+      <ClInclude Include="framework\helpers.h">
+      <Filter>framework</Filter>
+      </ClInclude>
+      <ClInclude Include="framework\il2cpp-appdata.h">
+      <Filter>framework</Filter>
+      </ClInclude>
+      <ClInclude Include="framework\il2cpp-init.h">
+      <Filter>framework</Filter>
+      </ClInclude>
+      <ClInclude Include="framework\pch-il2cpp.h">
+      <Filter>framework</Filter>
+      </ClInclude>
+      <ClInclude Include="framework\version.h">
+      <Filter>framework</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\detours\detours.h">
+      <Filter>libraries\detours</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imconfig.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imgui.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imgui_impl_dx11.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imgui_impl_win32.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imgui_internal.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imstb_rectpack.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imstb_textedit.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="libraries\imgui\imstb_truetype.h">
+      <Filter>libraries\imgui</Filter>
+      </ClInclude>
+      <ClInclude Include="user\settings.h">
+      <Filter>user</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\gui\GUITheme.h">
+      <Filter>handlers\gui</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\gui\menu.h">
+      <Filter>handlers\gui</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\gui\tabs\SettingsTAB.h">
+      <Filter>handlers\gui\tabs</Filter>
+      </ClInclude>
+   <ClInclude Include="handlers\gui\tabs\UnityExplorerTAB.h">
+      <Filter>handlers\gui\tabs</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\Dx11.h">
+      <Filter>handlers</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\keybinds.h">
+      <Filter>handlers</Filter>
+      </ClInclude>
+   <ClInclude Include="handlers\Il2CppResolver.h">
+      <Filter>handlers</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\hooks\DirectX.h">
+      <Filter>handlers\hooks</Filter>
+      </ClInclude>
+      <ClInclude Include="handlers\hooks\InitHooks.h">
+      <Filter>handlers\hooks</Filter>
+      </ClInclude>
+      </ItemGroup>
+      <ItemGroup>
+      <Filter Include="appdata">
+      <UniqueIdentifier>{f25074d4-04f5-4c26-9de5-87ef2812c74a}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="framework">
+      <UniqueIdentifier>{268e5905-81e2-4f85-93f5-bfb6e1e35235}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="user">
+      <UniqueIdentifier>{d9ed99dd-a7ac-4090-86bb-292875ece397}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="libraries">
+      <UniqueIdentifier>{00bdad6b-576b-40c4-bc54-6c1fcd922660}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="libraries\detours">
+      <UniqueIdentifier>{dae1e92b-3d87-4784-8691-8c33d4306626}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="libraries\imgui">
+      <UniqueIdentifier>{40bc3784-b796-4282-bc65-6503a8e5ae55}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="handlers">
+      <UniqueIdentifier>{56c42f11-54bf-4c68-a83c-3290ff598e51}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="handlers\gui">
+      <UniqueIdentifier>{7f9e53d8-690a-40d3-94f9-c028128368d5}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="handlers\gui\tabs">
+      <UniqueIdentifier>{4be48208-d17e-47ee-9e2f-93fa32259f95}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="handlers\hooks">
+      <UniqueIdentifier>{7a2f372c-d8f9-4923-86ca-c667bf686727}</UniqueIdentifier>
+      </Filter>
+      <Filter Include="definitions">
+      <UniqueIdentifier>{d0c447eb-935f-494b-9561-c6746bd59f19}</UniqueIdentifier>
+      </Filter>
+      </ItemGroup>
+      </Project>

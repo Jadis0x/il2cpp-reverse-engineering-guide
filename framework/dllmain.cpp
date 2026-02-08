@@ -1,28 +1,33 @@
-// Generated C++ file by Il2CppInspector - http://www.djkaty.com - https://github.com/djkaty
-// DLL entry point
-
-#define WIN32_LEAN_AND_MEAN
+// dllmain.cpp
+#include "pch-il2cpp.h"
 #include <windows.h>
-#include "il2cpp-init.h"
 #include "main.h"
 
-// DLL entry point
-BOOL APIENTRY DllMain( HMODULE hModule,
-                       DWORD  ul_reason_for_call,
-                       LPVOID lpReserved
-                     )
+#ifdef _VERSION
+#include "version.h"
+#endif
+
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
 {
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        init_il2cpp();
-        CreateThread(NULL, 0, reinterpret_cast<LPTHREAD_START_ROUTINE>(Run), NULL, 0, NULL);
+        DisableThreadLibraryCalls(hModule);
+
+        // If _VERSION is defined, call the Proxy Load function
+#ifdef _VERSION
+        CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)Load, hModule, NULL, NULL);
+#else
+         // If not defined, directly call our own Run function (Injector Mode)
+        CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)Run, hModule, NULL, NULL);
+#endif
         break;
-    case DLL_THREAD_ATTACH:
-    case DLL_THREAD_DETACH:
+
     case DLL_PROCESS_DETACH:
+#ifdef _VERSION
+        FreeVersionLibrary(); // Clean
+#endif
         break;
     }
     return TRUE;
 }
-

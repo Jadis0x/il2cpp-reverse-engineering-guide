@@ -1,55 +1,57 @@
-// Generated C++ file by Il2CppInspector - http://www.djkaty.com - https://github.com/djkaty
-// IL2CPP application initializer
 
-#include "pch-il2cpp.h"
+      // Generated C++ file by Il2CppInspectorPro - https://github.com/jadis0x
+      // IL2CPP application initializer
 
-#include "il2cpp-appdata.h"
-#include "il2cpp-init.h"
-#include "helpers.h"
+      #include "pch-il2cpp.h"
 
-// IL2CPP APIs
-#define DO_API(r, n, p) r (*n) p
-#include "il2cpp-api-functions.h"
-#undef DO_API
+      #include "il2cpp-appdata.h"
+      #include "il2cpp-init.h"
+      #include "helpers.h"
 
-// Application-specific functions
-#define DO_APP_FUNC(a, r, n, p) r (*n) p
-#define DO_APP_FUNC_METHODINFO(a, n) struct MethodInfo ** n
-namespace app {
-#include "il2cpp-functions.h"
-}
-#undef DO_APP_FUNC
-#undef DO_APP_FUNC_METHODINFO
+      // IL2CPP APIs
+      #define DO_API(r, n, p) r (*n) p
+      #include "il2cpp-api-functions.h"
+      #undef DO_API
 
-// TypeInfo pointers
-#define DO_TYPEDEF(a, n) n ## __Class** n ## __TypeInfo
-namespace app {
-#include "il2cpp-types-ptr.h"
-}
-#undef DO_TYPEDEF
+      // Application-specific functions
+      #define DO_APP_FUNC(a, r, n, p) r (*n) p
+      #define DO_APP_FUNC_METHODINFO(a, n) struct MethodInfo ** n
+      namespace app {
+      #include "il2cpp-functions.h"
+      }
+      #undef DO_APP_FUNC
+      #undef DO_APP_FUNC_METHODINFO
 
-// IL2CPP application initializer
-void init_il2cpp()
-{
-	// Get base address of IL2CPP module
-	uintptr_t baseAddress = il2cppi_get_base_address();
+      // TypeInfo pointers
+      #define DO_TYPEDEF(a, n) n ## __Class** n ## __TypeInfo
+      namespace app {
+      #include "il2cpp-types-ptr.h"
+      }
+      #undef DO_TYPEDEF
 
-	using namespace app;
+      // IL2CPP application initializer
+      void init_il2cpp()
+      {
+      // Get base address of IL2CPP module
+      uintptr_t baseAddress = il2cppi_get_base_address();
 
-	// Define IL2CPP API function addresses
-	#define DO_API(r, n, p) n = (r (*) p)(baseAddress + n ## _ptr)
-	#include "il2cpp-api-functions.h"
-	#undef DO_API
+      using namespace app;
 
-	// Define function addresses
-	#define DO_APP_FUNC(a, r, n, p) n = (r (*) p)(baseAddress + a)
- 	#define DO_APP_FUNC_METHODINFO(a, n) n = (struct MethodInfo **)(baseAddress + a)
-	#include "il2cpp-functions.h"
-	#undef DO_APP_FUNC
- 	#undef DO_APP_FUNC_METHODINFO
+      // Define IL2CPP API function addresses
+      #define DO_API(r, n, p) n = (r (*) p)(baseAddress + n ## _ptr)
+      #include "il2cpp-api-functions.h"
+      #undef DO_API
 
-	// Define TypeInfo variables
-	#define DO_TYPEDEF(a, n) n ## __TypeInfo = (n ## __Class**) (baseAddress + a);
-	#include "il2cpp-types-ptr.h"
-	#undef DO_TYPEDEF
-}
+      // Define function addresses
+      #define DO_APP_FUNC(a, r, n, p) n = (r (*) p)(baseAddress + a)
+      #define DO_APP_FUNC_METHODINFO(a, n) n = (struct MethodInfo **)(baseAddress + a)
+      #include "il2cpp-functions.h"
+      #undef DO_APP_FUNC
+      #undef DO_APP_FUNC_METHODINFO
+
+      // Define TypeInfo variables
+      #define DO_TYPEDEF(a, n) n ## __TypeInfo = (n ## __Class**) (baseAddress + a);
+      #include "il2cpp-types-ptr.h"
+      #undef DO_TYPEDEF
+      }
+    
