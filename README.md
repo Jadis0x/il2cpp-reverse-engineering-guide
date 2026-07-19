@@ -706,5 +706,8 @@ void Scenario6_AttachHandlerToPlayer(bool enable) {
 }
 ```
 
+### Recommended Project
+If you are looking to create native C++ mods for Mono or IL2CPP Unity games, check out [URKit](https://github.com/Jadis0x/URKit).
+
 ### Disclaimer
 This guide is for educational and research purposes only. The author is not responsible for any misuse, bans, or legal issues resulting from the use of these techniques. Use these tools ethically and respect the terms of service of the software you analyze.
